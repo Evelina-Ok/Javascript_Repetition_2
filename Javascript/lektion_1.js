@@ -16,11 +16,29 @@
 // 142 * 23 = ?
 // 94 / 23  = ?
 // Svarene skal ligesom opgaven ovenfor vises i hver sin console.log
+num1 = 992
+num2 = 237
+num3 = 44
+num4 = 12
+num5 = 142
+num6 = 23
+num7 = 94
+
+let sum = num1 + num2;
+console.log(sum);
+let difference = num3 - num4;
+console.log(difference);
+let multiplication = num5 * num6;
+console.log(multiplication);
+let division = num7 / num6;
+console.log(division);
 //_______________________________________________________________________________
 
 // Opgave 3
 // Du skal nu lave en click counter med et onclick event. Din click counter skal have en knap
-// der gennem Javascript får tildelt en eventlistener. Antal af clicks skal vises i DOM´en.
+// der gennem Javascript får tildelt/assigned en eventlistener. Antal af clicks skal vises i DOM´en.
+
+
 //_______________________________________________________________________________
 
 // Opgave 4
