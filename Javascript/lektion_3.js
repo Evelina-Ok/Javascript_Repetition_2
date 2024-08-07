@@ -1,12 +1,46 @@
 /*******************************
  * Lektion 3 - Loops & Arrays  *
  *******************************/
+import {storeProducts} from './storeProducts.js'
+console.log('storeProductd', storeProducts);
+
 
 // Opgave 1
 // Du skal i disse opgaver arbejde med et givent array. Arrayet ligger i filen: storeProducts.js
 // Start med at lave en <div> som du henter ind i dit script med en getElementById metode.
 // Du skal i første omgang loope igennem alle indexes i arrayet og vise alle produkterne i din div.
 // Produkterne skal opstilles i et css grid eller en flexbox, med pris, billede, produkt navn, antal og popularitet (0-10).
+
+const productContainer = document.getElementById('1_3ProductContainer');
+
+function displayProducts() {
+
+storeProducts.forEach((item) => {
+    console.log(item);
+    
+    const productDiv= document.createElement('div');
+   
+    const productTitle = document.createElement('h2');
+    productDiv.appendChild('productTitle');
+
+    const productPrice = document.createElement('p');  
+    productDiv.appendChild('productPrice');
+
+    const productPopularity = document.createElement('p');
+    productDiv.appendChild('productPopularity');
+
+    const productQuantity = document.createElement('p');
+    productDiv.appendChild('productQuantity');
+
+    const productImage = document.createElement('img');
+    productDiv.appendChild('productImage');
+
+    productContainer.appendChild('productDiv');
+});
+}
+
+
+
 //________________________________________________________________________________________
 
 // Opgave 2

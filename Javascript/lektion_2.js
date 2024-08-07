@@ -7,12 +7,29 @@
 // Din funktion skal altså tage imod et argument (din string der skal tjekkes) og returnere et resultat i form af et tal.
 // Funktionen skal kaldes og du skal gemme resultatet, hvorefter string + resultat skal printes i en console.log,
 // så der står i konsollen: "Relativitetsteori er 17 bogstaver langt".
+
+function stringLength () {
+    let string = 'Relativitetsteori';
+    
+}
+
+
 //________________________________________________________________________________________________
 
 // Opgave 2
 // Du skal i denne opgave lave et objekt der indeholde følgende:
 // - Fornavn, Efternavn, Email, Telefonnummer, Adresse og Postnummer.
 // Objektet skal printes ud i en console.log
+
+const object1 = {
+    Name: 'Harry',
+    Surname: 'Potter',
+    Email: 'nonexistent',
+    Phone: 'unknown',
+    Address: '4 Privet Drive, Little Whinging, Surrey',
+    Postnumber: 'RG12 9FG'
+}
+console.log(object1);
 //________________________________________________________________________________________________
 
 // Opgave 3
@@ -21,6 +38,13 @@
 // og til sidst hvad den nye "value" skal være.
 // Til slut skal din funktion returnere det nye modificerede objekt og printe dette i en console.log.
 // Du kan med fordel bruge objektet du lavede i opgave 2 til at ændre på en value.
+
+const changeObjectValue = (object, key, value) => {
+    const changeObject = object[key] = value;
+    console.log(changeObject);
+    
+}
+changeObjectValue(object1, 'Address', 'Hogwarts castle, Gryffindor tower, somewhere in Scotland')
 //_________________________________________________________________________________________________
 
 // Opgave 4
