@@ -38,7 +38,19 @@ console.log(division);
 // Du skal nu lave en click counter med et onclick event. Din click counter skal have en knap
 // der gennem Javascript får tildelt/assigned en eventlistener. Antal af clicks skal vises i DOM´en.
 
+let count = 0;
+let clickBtn = document.getElementById('clickBtn');
+const clickElement = document.getElementById('1_3');
+let clickCount = document.createElement('p')
 
+clickBtn.addEventListener('click', function() {
+    count++;
+    clickCount.innerText = 'Button clicked ' + count + ' times';
+    clickElement.appendChild(clickCount)
+
+    console.log(count);
+    
+});
 //_______________________________________________________________________________
 
 // Opgave 4
